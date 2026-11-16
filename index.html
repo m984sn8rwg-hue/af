@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0a1f">
+<title>عالم فاطمة الصغير</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"></div>
+
+<main>
+  <section class="scene active" id="s1">
+    <canvas id="name" aria-label="فاطمة"></canvas>
+    <p id="sub"></p>
+    <button class="cta" id="start">ادخلي عالمك</button>
+  </section>
+
+  <section class="scene" id="s2">
+    <h2>ذكرياتنا</h2>
+    <div class="rail" id="memories"></div>
+    <p class="hint">اسحبي يمينًا ويسارًا</p>
+  </section>
+
+  <section class="scene" id="s3">
+    <h2>أمنيات لكِ</h2>
+    <p class="hint">اضغطي على النجوم لتربطيها</p>
+    <div class="sky3" id="sky3"><svg id="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+    <p id="wish" class="wish" aria-live="polite"></p>
+  </section>
+
+  <section class="scene" id="s4">
+    <h2>اطفئي الشمعة</h2>
+    <div class="cake" id="cake" role="button" tabindex="0" aria-label="اطفئي الشمعة">
+      <div class="flame"></div><div class="candle"></div>
+      <div class="layer l1"></div><div class="layer l2"></div>
+    </div>
+    <button class="cta ghost" id="mic">🎤 انفخي في الميكروفون</button>
+    <p id="cakeMsg" class="wish" aria-live="polite"></p>
+  </section>
+
+  <section class="scene" id="s5">
+    <h2>رسالة أخيرة</h2>
+    <div class="glass letterbox"><p id="letter" class="letter"></p><p id="sign" class="sign"></p></div>
+  </section>
+</main>
+
+<nav>
+  <button id="prev" aria-label="السابق">›</button>
+  <div id="dots"></div>
+  <button id="next" aria-label="التالي">‹</button>
+</nav>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
